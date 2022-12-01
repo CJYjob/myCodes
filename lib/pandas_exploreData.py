@@ -1,4 +1,4 @@
 import pandas as pd
 
-def exploreDataFrame(df) :
+def exploreData(df) :
     print(df.shape)
