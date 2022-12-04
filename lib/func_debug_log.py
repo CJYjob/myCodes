@@ -24,6 +24,8 @@ def debug_log(log, filename, end=1, lect=None, flag=1):
     end = end + 1
     if lect is None :
         lect = list(range(1, end))
+    elif type(lect) == int :
+        lect = list(range(lect, end))
     else :
         lect
     if flag in list(lect) : print(f'debug_log | {dt_now_str} | {filename} | >>> {log}')
